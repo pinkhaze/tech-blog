@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to Bulma's CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">   
+  <title>Pursuit of Music</title>
+</head>
+
+<body>
+    {{#if logged_in}}
+    <nav class="navbar is-flex-wrap-wrap">
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <!-- Navbar items -->
+                <a href="/" class="has-text-black is-size-2 p-5">Tech Blog</a>
+            </div>
+            <div class="navbar-end">
+                <!-- Navbar items -->
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="/dashboard" class="button is-warning is-medium is-rounded">Dashboard</a>
+                        <a href="/dashboard/account" class="button is-warning is-medium is-rounded">Profile</a>
+                        <a class="button is-medium is-warning is-rounded">Contact Us</a>
+                        <a class="button is-medium is-warning is-rounded" id="logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    {{else}}
+    <nav class="navbar">
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <!-- navbar items -->
+                <a href="/" class="has-text-black is-size-2 p-5">Tech Blog</a>
+            </div>
+            <div class="navbar-end">
+                <!-- navbar items -->
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="/" class="button is-warning is-medium is-rounded" id="logout">Home</a>
+                        <a href="/dashboard" class="button is-warning is-medium is-rounded" id="dashboard">Dashboard</a>
+                        <a href="/login" class="button is-warning is-medium is-rounded" id="login">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {{/if}}
+
+    {{{body}}}
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.navbar {
+    height: 160px;
+}
+
+.button {
+    width: 200px;
+}
