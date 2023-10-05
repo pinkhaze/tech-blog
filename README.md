@@ -98,7 +98,7 @@
 
   ## Usage
 
-  [Deployed Application](https://github.com/pinkhaze/social-media-back-end/assets/55771228/991e4c13-8340-4096-845d-a6d79546ff66)
+  [Deployed Application](https://git.heroku.com/still-tundra-52553.git)
 
   ## Credits
 
