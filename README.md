@@ -12,28 +12,28 @@
  * opening API GET routes in Insomnia for categories, products, or tags displays the data for each of these routes in a formatted JSON
  * when a user visits the site for the first time, they are presented with the homepage, which includes existing blog posts if any have been       
    posted; navigation links for the homepage and the dashboard; and the option to log in
-* clicking on the hompate option takes the user to the homepage
-* clicking on any other links in the navigation leads the user to either sign up or sign in
-* when the user chooses to sign up, then they are prompted to create a username and passwor
-* clicking on the sign-up button saves the user's credentials and logs the user into the site
-* when a user revisits the site at a later time and chooses to sign in, then they are prompted to enter their username and password
-* when the user is signed in to the site, the the user sees navigation links for the homepage, the dashboard, and the option to log out
-* clicking on the homepage option in the navigation takes the user to the homepage and presents existing blog posts that include the post title and 
-  the date created
-* clicking on an existing blog post presents the post title, contents, post creator’s username, and date created for that post and havs the option 
-  to leave a comment
-* entering a comment and clicking on the submit button while signed in, saves the comment and updates the post to display the comment, the comment 
+ * clicking on the hompate option takes the user to the homepage
+ * clicking on any other links in the navigation leads the user to either sign up or sign in
+ * when the user chooses to sign up, then they are prompted to create a username and passwor
+ * clicking on the sign-up button saves the user's credentials and logs the user into the site
+ * when a user revisits the site at a later time and chooses to sign in, then they are prompted to enter their username and password
+ * when the user is signed in to the site, the the user sees navigation links for the homepage, the dashboard, and the option to log out
+ * clicking on the homepage option in the navigation takes the user to the homepage and presents existing blog posts that include the post title 
+   and the date created
+ * clicking on an existing blog post presents the post title, contents, post creator’s username, and date created for that post and havs the option 
+   to leave a comment
+ * entering a comment and clicking on the submit button while signed in, saves the comment and updates the post to display the comment, the comment 
   creator’s username, and the date created
-* clicking on the dashboard option in the navigation takes the user to the dashboard and presents any blog posts the user has already created and 
-  the option to add a new blog post
-* clicking on the button to add a new blog post prompts the user to enter both a title and contents for their blog post
-* clicking on the button to create a new blog post saves the title and contents of the user's post and takes the user back to an updated dashboard 
+ * clicking on the dashboard option in the navigation takes the user to the dashboard and presents any blog posts the user has already created and 
+   the option to add a new blog post
+ * clicking on the button to add a new blog post prompts the user to enter both a title and contents for their blog post
+ * clicking on the button to create a new blog post saves the title and contents of the user's post and takes the user back to an updated dashboard 
   with their new blog post
-* clicking on one of their existing posts in the dashboard, the user is able to delete or update their post and takes them back to an updated 
-  dashboard
-* licking on the logout option in the navigation signs the user out of the site
-* when a user is idle on the site for more than a set time, then the user is able to view posts and comments but is prompted to log in again before 
-  they can add, update, or delete posts
+ * clicking on one of their existing posts in the dashboard, the user is able to delete or update their post and takes them back to an updated 
+   dashboard
+ * licking on the logout option in the navigation signs the user out of the site
+ * when a user is idle on the site for more than a set time, then the user is able to view posts and comments but is prompted to log in again 
+   before they can add, update, or delete posts
 
   ## Table of Contents
   - [Installation](#installation)
@@ -43,13 +43,13 @@
   - [Contribute](#contribute)
   - [Tests](#tests)
   - [Questions](#questions)
-  
+
   ## Installation
 
   1. If not already installed, download [Node.js](https://nodejs.org/en/download) and [Git](https://git-scm.com) (if using Windows)
-  
+
   2. Clone the `tech-blog` repository to your machine from the command line (Git Bash on Windows) or terminal (Mac)
-  
+
   ```bash
       git clone git@github.com:pinkhaze/tech-blog
   ```
@@ -111,7 +111,7 @@
   ## Contribute
 
   NA
-  
+
   ## Tests
 
   NA

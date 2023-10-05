@@ -1,46 +1,22 @@
-// const loginHandler = async (event) => {
-//     event.preventDefault()
-
-//     const email = document.querySelector('#email-login').value.trim()
-//     const password = document.querySelector('#password-login').value.trim()
-
-//     if (email && password) {
-//         const response = await fetch('/api/users/login', {
-//             method: 'POST',
-//             body: JSON.stringify({ email, password }),
-//             headers: { 'Content-Type': 'application/json' }
-//         })
-
-//         if (response.ok) {
-//             document.location.replace('/dashboard')
-//         } else {
-//             console.log("Success!")
-//         }
-//     }
-// }
-
-// document.querySelector('.signin-btn').addEventListener('click', loginHandler)
-
 const loginHandler = async (event) => {
     event.preventDefault()
-    console.log('submitted')
 
-    const username = document.querySelector('#username-login').value.trim()
+    const email = document.querySelector('#email-login').value.trim()
     const password = document.querySelector('#password-login').value.trim()
 
-    if (username && password) {
+    if (email && password) {
         const response = await fetch('/api/users/login', {
             method: 'POST',
-            body: JSON.stringify({ username, password }),
+            body: JSON.stringify({ email, password }),
             headers: { 'Content-Type': 'application/json' }
         })
 
         if (response.ok) {
             document.location.replace('/dashboard')
         } else {
-            alert(response.statusText)
+            console.log("Success!")
         }
     }
 }
 
-document.querySelector('.login-form').addEventListener('submit', loginHandler)
+document.querySelector('.signin-btn').addEventListener('click', loginHandler)
